@@ -1,18 +1,28 @@
 {
-    "name": "wasp",
-    "version": "0.1.0",
-    "description": "",
-    "author": {
-        "name": "Ned Rihine",
-        "email": "ned.rihine@gmail.com"
-    },
-    "main": "lib/index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-        "build system",
-        "task runner"
-    ],
-    "license": "ISC"
+  "name": "wasp",
+  "version": "0.1.0",
+  "description": "",
+  "author": {
+    "name": "Ned Rihine",
+    "email": "ned.rihine@gmail.com"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "build system",
+    "task runner"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "arrify": "^1.0.1",
+    "chokidar": "^1.6.0",
+    "co": "^4.6.0",
+    "debug": "^2.2.0",
+    "globby": "^5.0.0",
+    "interpret": "^1.0.1",
+    "mkdirp": "^0.5.1",
+    "object-assign": "^4.1.0"
+  }
 }

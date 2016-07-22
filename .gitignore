@@ -1,3 +1,10 @@
 # Emacs temporary files
 *~
 \#*#
+
+# Log files
+*.log
+logs/
+
+# NPM Dependency Direcotry
+node_modules/
