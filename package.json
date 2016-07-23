@@ -14,7 +14,7 @@
         "build system",
         "task runner"
     ],
-    "license": "ISC",
+    "license": "MIT",
     "dependencies": {
         "arrify": "^1.0.1",
         "chokidar": "^1.6.0",
