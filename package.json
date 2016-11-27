@@ -1,12 +1,13 @@
 {
     "name": "wasp",
     "version": "0.1.0",
-    "description": "",
+    "description": "Build System",
     "author": {
         "name": "Ned Rihine",
         "email": "ned.rihine@gmail.com"
     },
     "main": "lib/index.js",
+    "bin": "bin/wasp.js",
     "scripts": {
         "lint": "xo",
         "test": "tape ./test/*.js",

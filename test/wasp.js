@@ -20,7 +20,7 @@ tape.test('->  Wasp', t => {
     methods.forEach(method => {
         const actualMethod = Wasp.prototype[method];
 
-        t.ok(actualMethod !== undefined, method + ' is defined');
+        t.ok(actualMethod !== undefined, `${method} is defined`);
     });
 
     t.end();
