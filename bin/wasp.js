@@ -1,24 +1,18 @@
-const fs = require( 'fs' );
+const fs       = require( 'fs' );
 
-this.debug = function (text) {
-    console.log( text );
-};
+const { Wasp } = require( '../lib/wasp' );
 
-const abailableWaspFiles = [
+const ABAILABLE_WASPFILES = [
     'waspfile',
     'Waspfile',
     'waspfile.js',
     'Waspfile.js'
 ];
 
-let foundFileName = abailableWaspFiles.find( filename => fs.existsSync( filename ) );
-
-console.log( foundFileName );
-
+let foundFileName = ABAILABLE_WASPFILES.find( filename => fs.existsSync( filename ) );
+        
 let waspfile = require( foundFileName );
 
-console.log( waspfile );
+let wasp = new Wasp();
 
-if ( waspfile.default ) {
-    waspfile.default.apply( this );
-}
+wasp.run( waspfile );
