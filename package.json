@@ -8,7 +8,9 @@
     },
     "main": "lib/index.js",
     "scripts": {
-        "test": "xo && tape ./test/*.js"
+        "lint": "xo",
+        "test": "tape ./test/*.js",
+        "test-and-lint": "xo && tape ./test/*.js"
     },
     "keywords": [
         "build system",
@@ -18,8 +20,10 @@
     "dependencies": {
         "arrify": "^1.0.1",
         "chokidar": "^1.6.0",
+        "clor": "^2.0.2",
         "co": "^4.6.0",
         "debug": "^2.2.0",
+        "find-up": "^1.1.2",
         "flatten": "^1.0.2",
         "globby": "^5.0.0",
         "interpret": "^1.0.1",
@@ -36,7 +40,18 @@
         "space": 4,
         "esnext": true,
         "camelcase": "never",
-        "space-in-parens": [ "error", "always", { "exceptions": [ "()" ] } ],
-        "object-shorthand": [ "error", "methods" ]
+        "space-in-parens": [
+            "error",
+            "always",
+            {
+                "exceptions": [
+                    "()"
+                ]
+            }
+        ],
+        "object-shorthand": [
+            "error",
+            "methods"
+        ]
     }
 }
